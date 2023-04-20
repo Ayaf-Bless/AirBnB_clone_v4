@@ -23,7 +23,7 @@ def do_pack():
     """Function to create tarball of webstatic files from the web_static
     folder in Airbnb_v2.
 
-    Returns: path of .tgz file on success, False otherwise
+    Returns: path of .tgz file on success,otherwise return False
     """
     with api.settings(warn_only=True):
         isdir = os.path.isdir('versions')
